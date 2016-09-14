@@ -1,21 +1,83 @@
 <!doctype html>
 <html>
 
-
   <head>
-    <h1>Test</h1>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>FUSUF Forms</title>
   </head>
 
-
   <header>
-
+    <h1>Force User Sign Up Form</h1>
   </header>
-
-
 
   <main>
 
+    <form action="http://requestb.in/1mavyeo1" method="post" autocomplete="on">
+
+      <table align="center">
+        <td>
+          <fieldset>
+            <legend>Basic Info</legend>
+            <label for="fullName">Full Name</label><br>
+            <input id="fullName" type="text" size="56" name="fullName" placeholder="Luke Skywalker" required><br><br>
+            <label for="profilePic">Profile Pic</label><br>
+            <input id="profilePic" type="file" name="profilePic" value="profilePic"><br><br>
+            <label for="emailAddress">Email</label><br>
+            <input id="emailAddress" type="email" size="56" name="emailAddress" placeholder="luke@sky.com" required><br><br>
+            <label for="sideChoice">Side</label><br>
+            <input id="sideChoice" type="radio" name="sideChoice" Value="Light"><label class="normal" for="Light"> Light</lable>
+            <input id="sideChoice" type="radio" name="sideChoice" Value="Dark"><label class="normal" for="Dark"> Dark</lable><br><br>
+            <label for="originStory">Origin Story</label><br>
+            <textarea id="originStory" rows="5" cols="54" name="originStory" required></textarea>
+          </fieldset>
+        </td>
+        <td valign="top">
+          <fieldset>
+            <legend>Abilities</legend>
+            <label for="lsColor">Lightsaber Color</label><br>
+            <select id="lsColor">
+              <option name="lsColor" value="none">Select Color</option>
+              <option name="lsColor" value="blue">Blue</option>
+              <option name="lsColor" value="red">Red</option>
+              <option name="lsColor" value="green">Green</option>
+              <option name="lsColor" value="purple">Purple</option>
+            </select><br><br>
+            <label for="levitateCount">How many objects can you levitate at once?</label><br>
+            <input id="levitateCount" type="number" min="0" name="levitateCount"><br><br>
+            <label for="favoriteAbility">Favorite Ability</label><br>
+            <input id="favoriteAbility" type="text" size="56" name="favoriteAbility" placeholder="Precognition" required><br><br>
+            <label for="pilotExperience">Pilot Experience</label><br>
+            <input id="pilotExperience" type="checkbox" name="pilotExperience" Value="Speeder"><label class="normal" for="Speeder"> Speeder</lable>
+            <input id="pilotExperience" type="checkbox" name="pilotExperience" Value="Transport"><label class="normal" for="Transport"> Transport</lable>
+            <input id="pilotExperience" type="checkbox" name="pilotExperience" Value="X-wing"><label class="normal" for="X-wing"> X-wing</lable>
+            <input id="pilotExperience" type="checkbox" name="pilotExperience" Value="TIE Fighter"><label class="normal" for="TIE Fighter"> TIE Fighter</lable>
+            <input id="pilotExperience" type="checkbox" name="pilotExperience" Value="Starship"><label class="normal" for="Starship"> Starship</lable>
+            <input id="pilotExperience" type="checkbox" name="pilotExperience" Value="Bantha"><label class="normal" for="Bantha"> Bantha</lable>
+          </fieldset>
+        </td>
+        <td valign="top">
+          <fieldset>
+            <legend>Application Info</legend>
+            <label for="desiredMentor">Desired Mentor</label><br>
+            <input id="desiredMentor" type="text" size="56" name="desiredMentor" placeholder="Yoda"><br><br>
+            <label for="appDate">Application Date</label><br>
+            <input id="appDate" type="date" size="25" name="appDate" placeholder="mm/dd/yyyy" required><br><br>
+            <label for="appPassword">Application Password</label><br>
+            <input id="appPassword" type="password" size="25" name="appPassword" required><br><br>
+            <label for="darkSide">How do you get to the dark side?</label><br>
+            <textarea id="darkSide" rows="5" cols="54" name="darkSide" ></textarea><br><br>
+            <input type="reset" value="Start Over">
+            <input type="submit" Value="Apply">
+          </fieldset>
+        </td>
+      </table>
+
+    </form>
+
   </main>
 
+  <footer>
+    <p>2016 The Republic<p>
+  </footer>
 
 </html>
